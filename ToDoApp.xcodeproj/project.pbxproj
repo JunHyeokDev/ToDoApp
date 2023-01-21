@@ -14,6 +14,13 @@
 		BFE82B86297B54E400457E06 /* ToDoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFE82B84297B54E400457E06 /* ToDoApp.xcdatamodeld */; };
 		BFE82B88297B54E600457E06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE82B87297B54E600457E06 /* Assets.xcassets */; };
 		BFE82B8B297B54E600457E06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE82B89297B54E600457E06 /* LaunchScreen.storyboard */; };
+		BFE82B94297B55BA00457E06 /* ToDoData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE82B92297B55BA00457E06 /* ToDoData+CoreDataClass.swift */; };
+		BFE82B95297B55BA00457E06 /* ToDoData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE82B93297B55BA00457E06 /* ToDoData+CoreDataProperties.swift */; };
+		BFE82B99297B5C4B00457E06 /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE82B98297B5C4B00457E06 /* ToDoCell.swift */; };
+		BFE82B9B297B67E400457E06 /* MyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE82B9A297B67E400457E06 /* MyColor.swift */; };
+		BFE82B9F297B684C00457E06 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE82B9E297B684C00457E06 /* UIColor+Extension.swift */; };
+		BFE82BA1297B686500457E06 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE82BA0297B686500457E06 /* CoreDataManager.swift */; };
+		BFE82BA3297B68E200457E06 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE82BA2297B68E200457E06 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		BFE82B87297B54E600457E06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFE82B8A297B54E600457E06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFE82B8C297B54E600457E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFE82B92297B55BA00457E06 /* ToDoData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BFE82B93297B55BA00457E06 /* ToDoData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BFE82B98297B5C4B00457E06 /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
+		BFE82B9A297B67E400457E06 /* MyColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColor.swift; sourceTree = "<group>"; };
+		BFE82B9E297B684C00457E06 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		BFE82BA0297B686500457E06 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		BFE82BA2297B68E200457E06 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +74,9 @@
 			children = (
 				BFE82B7B297B54E400457E06 /* AppDelegate.swift */,
 				BFE82B7D297B54E400457E06 /* SceneDelegate.swift */,
-				BFE82B7F297B54E400457E06 /* ViewController.swift */,
+				BFEEDBB9297BBD9F00EC2417 /* Models */,
+				BFEEDBB8297BBD9700EC2417 /* Views */,
+				BFEEDBB7297BBD8B00EC2417 /* Controllers */,
 				BFE82B81297B54E400457E06 /* Main.storyboard */,
 				BFE82B87297B54E600457E06 /* Assets.xcassets */,
 				BFE82B89297B54E600457E06 /* LaunchScreen.storyboard */,
@@ -68,6 +84,43 @@
 				BFE82B84297B54E400457E06 /* ToDoApp.xcdatamodeld */,
 			);
 			path = ToDoApp;
+			sourceTree = "<group>";
+		};
+		BFEEDBB7297BBD8B00EC2417 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BFE82BA2297B68E200457E06 /* DetailViewController.swift */,
+				BFE82B7F297B54E400457E06 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BFEEDBB8297BBD9700EC2417 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BFE82B98297B5C4B00457E06 /* ToDoCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BFEEDBB9297BBD9F00EC2417 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFEEDBBA297BBDC700EC2417 /* Helpers */,
+				BFE82B92297B55BA00457E06 /* ToDoData+CoreDataClass.swift */,
+				BFE82B93297B55BA00457E06 /* ToDoData+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BFEEDBBA297BBDC700EC2417 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BFE82B9E297B684C00457E06 /* UIColor+Extension.swift */,
+				BFE82B9A297B67E400457E06 /* MyColor.swift */,
+				BFE82BA0297B686500457E06 /* CoreDataManager.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +194,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE82BA3297B68E200457E06 /* DetailViewController.swift in Sources */,
 				BFE82B80297B54E400457E06 /* ViewController.swift in Sources */,
 				BFE82B7C297B54E400457E06 /* AppDelegate.swift in Sources */,
+				BFE82B99297B5C4B00457E06 /* ToDoCell.swift in Sources */,
+				BFE82B9F297B684C00457E06 /* UIColor+Extension.swift in Sources */,
 				BFE82B7E297B54E400457E06 /* SceneDelegate.swift in Sources */,
+				BFE82B95297B55BA00457E06 /* ToDoData+CoreDataProperties.swift in Sources */,
+				BFE82B9B297B67E400457E06 /* MyColor.swift in Sources */,
+				BFE82B94297B55BA00457E06 /* ToDoData+CoreDataClass.swift in Sources */,
+				BFE82BA1297B686500457E06 /* CoreDataManager.swift in Sources */,
 				BFE82B86297B54E400457E06 /* ToDoApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +359,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +367,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ToDoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -327,6 +391,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,9 +399,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ToDoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
